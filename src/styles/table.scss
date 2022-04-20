@@ -1,0 +1,28 @@
+table {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    
+    border-spacing: 0 0.5rem;
+
+    th {
+        text-align: left;
+        font-size: 1rem;
+        font-weight: normal;
+        color: var(--gray);
+        padding: 1rem 2rem;
+        line-height: 1.5rem;
+    }
+
+    td {
+        background-color: var(--off-white);
+        padding: 1rem 2rem;
+        border-radius: 0.25rem;
+        color: var(--gray)
+    }
+
+    td:first-child{
+        color: black;
+    }
+
+}

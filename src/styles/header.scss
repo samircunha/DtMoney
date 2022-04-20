@@ -1,0 +1,28 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    background-color: var(--background-header);
+    
+    height: 28vh;
+    padding-top: 1.5rem;
+
+    img{
+        width: 10rem;
+        margin-left: 15%
+    }
+
+    button{
+        background-color: var(--background-button);
+
+        color: var(--off-white);
+
+        border: none;
+        border-radius: 0.2rem;
+
+        padding: 0.6rem;
+        width: 9rem;
+        margin-right: 15%
+    }
+}

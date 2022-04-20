@@ -1,0 +1,45 @@
+div.flow{
+    display: flex;
+    justify-content: space-between;
+
+    transform: translateY(-50%);
+    
+    div.income, div.outcome, div.total{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        background-color: var(--off-white);
+        
+        border-radius: 0.3rem;        
+
+        width: 22vw;
+        height: 8.5vw;
+        padding: 1.3rem;
+
+        p{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 1.6rem
+            }
+        }
+
+        div{
+            font-size: 1.8rem;
+        }
+    }
+
+    div.income{
+        margin-left: 15%;
+    }
+
+    div.total{
+        background-color: var(--green);
+        color: var(--off-white);
+    
+        margin-right: 15%;
+    }
+}
