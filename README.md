@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+<h1 align="center"> 
+  Dt Money 
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+Table of Contents
+=================
+<!--ts-->
+  * [About the project](#-about-project)
+  * [Technologies](#-technologies)
+  * [Functionalities](#-functionalities)
+  * [Layout](#-layout)
+  * [How to use](#-how-to-use)
+<!--te-->
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## About the project <a name="-about-project" style="text-decoration:none"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm doing this project to challenge myself to make a project based on a figma layout. It will be a cash inflow and outflow controller. Along with that, it shows you what expenses and what cash inflows there were during the time period.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies <a name="-technologies" style="text-decoration:none"></a>
+  
+- **[React](https://en.reactjs.org/)**
+- **[Sass](https://sass-lang.com/)**
+  
+--- 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Functionalities <a name="-functionalities" style="text-decoration:none"></a>
+  
+- [x] Front Page
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Layout <a name="-layout" style="text-decoration:none"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### First Page
+<img alt="First Page" src="https://github.com/samircunha/DtMoney/blob/main/dt_money%20.png"></img>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to use <a name="-how-to-use" style="text-decoration:none"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Clone this repository
+$ git clone https://github.com/samircunha/DtMoney.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Go to the folder
+$ cd dt-money
 
-## Learn More
+# Install the dependencies
+$ npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Finally, run
+$ npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Wait and enjoy.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
