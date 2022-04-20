@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Table() {
+export function TransactionsTable() {
   return (
     <table>
       <thead>
