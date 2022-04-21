@@ -25,6 +25,7 @@ I'm doing this project to challenge myself to make a project based on a figma la
 ## Technologies <a name="-technologies" style="text-decoration:none"></a>
   
 - **[React](https://en.reactjs.org/)**
+- **[React-Modal](http://reactcommunity.org/)**
 - **[Sass](https://sass-lang.com/)**
   
 --- 
@@ -32,6 +33,7 @@ I'm doing this project to challenge myself to make a project based on a figma la
 ## Functionalities <a name="-functionalities" style="text-decoration:none"></a>
   
 - [x] Front Page
+- [x] Transaction Modal 
 
 ---
 
@@ -40,6 +42,8 @@ I'm doing this project to challenge myself to make a project based on a figma la
 ### First Page
 <img alt="First Page" src="https://github.com/samircunha/DtMoney/blob/main/dt_money%20.png"></img>
 
+### Transaction Modal 
+<img alt="Transaction Modal" src="https://github.com/samircunha/DtMoney/blob/main/modal.png"></img>
 
 ---
 
