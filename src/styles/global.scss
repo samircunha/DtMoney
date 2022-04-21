@@ -1,6 +1,7 @@
 :root {
     --green: #33CC95;
     --gray: #969CB2;
+    --gray-2: #eeeeee;
     --background-header: #5429CC;
     --background-body: #E5E5E5;
     --background-button: #6933FF;
@@ -13,11 +14,45 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font: 16px "Poppins", sans-serif;
     background-color: var(--background-body);
 }
 
-button{
+button {
     cursor: pointer;
+}
+
+.react-modal-overlay {
+    background-color: rgb(0, 0, 0, 0.5);
+
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-modal-content {
+    background-color: var(--gray-2);
+
+    position: relative;
+
+    width: 100%;
+    max-width: 480px;
+    padding: 3rem;
+    border-radius: 0.2rem;
+}
+
+.react-modal-close {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 1.5rem;
+    border: 0;
 }

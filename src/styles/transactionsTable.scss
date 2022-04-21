@@ -2,7 +2,7 @@ table {
     margin-left: 15%;
     margin-right: 15%;
     width: 70%;
-    
+
     border-spacing: 0 0.5rem;
 
     th {
@@ -17,12 +17,17 @@ table {
     td {
         background-color: var(--off-white);
         padding: 1rem 2rem;
-        border-radius: 0.25rem;
         color: var(--gray)
     }
 
-    td:first-child{
+    td:first-child {
         color: black;
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
     }
 
+    td:last-child {
+        border-top-right-radius: 0.25rem;
+        border-bottom-right-radius: 0.25rem;
+    }
 }

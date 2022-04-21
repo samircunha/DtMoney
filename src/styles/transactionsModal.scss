@@ -1,24 +1,49 @@
-.modal {
-    overlay: {
-        position: 'fixed';
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        backgroundColor: 'rgba(255, 255, 255, 0.75)';
+.react-modal-transaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
     }
 
-    content: {
-        position: 'absolute';
-        top: '40px';
-        left: '40px';
-        right: '40px';
-        bottom: '40px';
-        border: '1px solid #ccc';
-        background: '#fff';
-        overflow: 'auto';
-        borderRadius: '4px';
-        outline: 'none';
-        padding: '20px';
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button {
+        margin-bottom: 0.6rem;
+        border: 1px solid #d4d8e9;
+        border-radius: 0.2rem;
+        padding: 1rem;
+    }
+
+    input {
+        background-color: var(--background-body);
+        border: 1px solid #d4d8e9;
+        padding: 1rem;
+        margin-bottom: 0.6rem;
+        border-radius: 0.2rem;
+    }
+
+    .income-button,
+    .outcome-button {
+        width: 49%;
+        background-color: var(--off-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 1.5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .register-button {
+        background-color: var(--green);
+        color: var(--off-white);
     }
 }
