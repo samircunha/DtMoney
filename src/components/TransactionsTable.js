@@ -1,6 +1,9 @@
 import React from "react";
+import { useTransactions } from "../hooks/useTransactions";
 
 export function TransactionsTable() {
+  const { transactions } = useTransactions();
+
   return (
     <table>
       <thead>
@@ -12,18 +15,16 @@ export function TransactionsTable() {
         </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>Desenvolvimento de Site</td>
-        <td>R$ 12.000,00</td>
-        <td>Venda</td>
-        <td>12/04/2022</td>
-      </tr>
-      <tr>
-        <td>Hamburguer</td>
-        <td>R$ 59,00</td>
-        <td>Alimentação</td>
-        <td>13/04/2022</td>
-      </tr>
+        {transactions.map(transaction => { 
+          return(
+            <tr key={transaction.date}>
+              <td>{transaction.name}</td>
+              <td style={transaction.type === 'income' ? {color: '#33CC95'} : {color: "red"}}>{transaction.price}</td>
+              <td>{transaction.category}</td>
+              <td>{transaction.date}</td>
+            </tr>
+          )
+        })}
       </tbody>
     </table>
   );

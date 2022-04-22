@@ -15,16 +15,16 @@ Modal.setAppElement('#root');
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleToggleModal = () => {
+  const toggleModal = () => {
     setIsModalOpen((prev) => !prev);
   };
 
   return (
     <div>
-      <Header handleToggleModal={handleToggleModal} />
+      <Header toggleModal={toggleModal} />
       <Flow />
       <TransactionsTable />
-      <TransactionsModal isModalOpen={isModalOpen} handleToggleModal={handleToggleModal}/>
+      <TransactionsModal isModalOpen={isModalOpen} toggleModal={toggleModal}/>
     </div>
   );
 }

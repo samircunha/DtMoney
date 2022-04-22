@@ -2,11 +2,11 @@ import React from 'react';
 
 import Logo from "../assets/Logo.png";
 
-export function Header ({handleToggleModal}) {
+export function Header ({toggleModal}) {
     return (
         <header className="header">
-            <img src={Logo}></img>
-            <button onClick={handleToggleModal}>Nova Transação</button>
+            <img alt='logo' src={Logo}></img>
+            <button onClick={toggleModal}>Nova Transação</button>
         </header>
     )
 } 

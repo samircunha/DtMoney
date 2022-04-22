@@ -27,6 +27,8 @@ I'm doing this project to challenge myself to make a project based on a figma la
 - **[React](https://en.reactjs.org/)**
 - **[React-Modal](http://reactcommunity.org/)**
 - **[Sass](https://sass-lang.com/)**
+- **[Axios](https://axios-http.com/)**
+- **[Miragejs](https://miragejs.com/)**
   
 --- 
 
@@ -34,6 +36,9 @@ I'm doing this project to challenge myself to make a project based on a figma la
   
 - [x] Front Page
 - [x] Transaction Modal 
+- [x] Local Server With Miragejs
+- [x] Making Requests With Axios
+- [x] Saving New Transacions On Server
 
 ---
 
