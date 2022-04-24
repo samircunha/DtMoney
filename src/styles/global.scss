@@ -23,6 +23,18 @@ button {
     cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+    * {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 87.5%;
+    }
+}
+
 .react-modal-overlay {
     background-color: rgb(0, 0, 0, 0.5);
 

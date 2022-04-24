@@ -7,14 +7,14 @@ export function Server() {
         transactions: [
           {
             name: "Desenvolvimento de Site",
-            price: 'R$ 12.000,00',
+            price: 12000,
             category: "Venda",
             date: "12/04/2022",
             type: "income",
           },
           {
             name: "Hamburguer",
-            price: 'R$ 59,00',
+            price: 59,
             category: "Alimentação",
             date: "15/04/2022",
             type: "outcome",

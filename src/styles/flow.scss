@@ -1,23 +1,25 @@
-div.flow{
+div.flow {
     display: flex;
     justify-content: space-between;
 
     transform: translateY(-50%);
-    
-    div.income, div.outcome, div.total{
+
+    div.income,
+    div.outcome,
+    div.total {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         background-color: var(--off-white);
-        
-        border-radius: 0.3rem;        
 
-        width: 22vw;
-        height: 8.5vw;
+        border-radius: 0.3rem;
+
+        width: 22%;
+        height: 7rem;
         padding: 1.3rem;
 
-        p{
+        p {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,19 +29,51 @@ div.flow{
             }
         }
 
-        div{
+        div {
             font-size: 1.8rem;
         }
     }
 
-    div.income{
+    div.income {
         margin-left: 15%;
     }
 
-    div.total{
+    div.total {
         background-color: var(--green);
         color: var(--off-white);
-    
+
         margin-right: 15%;
+    }
+}
+
+@media(max-width:1024px) {
+    div.flow {
+
+        div.income,
+        div.outcome,
+        div.total {
+            height: 5rem;
+            padding: 1rem;
+
+            div {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    div.flow {
+
+        div.income,
+        div.outcome,
+        div.total {
+            height: 5rem;
+            padding: 0.8rem;
+
+            div {
+                font-size: 1.2rem;
+            }
+        }
     }
 }

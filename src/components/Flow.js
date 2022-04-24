@@ -1,33 +1,55 @@
 import React from "react";
 
-import entradas from "../assets/Entradas.png";
-import saidas from "../assets/Saidas.png";
-import total from "../assets/Total.png";
+import Entradas from "../assets/Entradas.png";
+import Saidas from "../assets/Saidas.png";
+import Total from "../assets/Total.png";
 
 import { useTransactions } from "../hooks/useTransactions";
 
 export function Flow() {
   const { transactions } = useTransactions();
+  let incomes = 0;
+  let outcomes = 0;
+  transactions.forEach((transaction) => {
+    if (transaction.type === "income") incomes += transaction.price;
+    else outcomes += transaction.price;
+  });
+  let total = incomes - outcomes;
 
   return (
     <div className="flow">
       <div className="income">
         <p>
-          <span>Entradas</span> <img alt="entradas" src={entradas}></img>
+          <span>Entradas</span> <img alt="entradas" src={Entradas}></img>
         </p>
-        <div>R$ 12.000,00</div>
+        <div>
+          {incomes.toLocaleString("pt-br", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </div>
       </div>
       <div className="outcome">
         <p>
-          <span>Saídas</span> <img alt="saidas" src={saidas}></img>
+          <span>Saídas</span> <img alt="saidas" src={Saidas}></img>
         </p>
-        <div>R$ 5.200,00</div>
+        <div>
+          {outcomes.toLocaleString("pt-br", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </div>
       </div>
       <div className="total">
         <p>
-          <span>Total</span> <img alt="total" src={total}></img>
+          <span>Saídas</span> <img alt="total" src={Total}></img>
         </p>
-        <div>R$ 12.300,00</div>
+        <div>
+          {total.toLocaleString("pt-br", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </div>
       </div>
     </div>
   );

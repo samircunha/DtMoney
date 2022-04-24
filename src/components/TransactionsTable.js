@@ -15,15 +15,26 @@ export function TransactionsTable() {
         </tr>
       </thead>
       <tbody>
-        {transactions.map(transaction => { 
-          return(
+        {transactions.map((transaction) => {
+          return (
             <tr key={transaction.date}>
               <td>{transaction.name}</td>
-              <td style={transaction.type === 'income' ? {color: '#33CC95'} : {color: "red"}}>{transaction.price}</td>
+              <td
+                style={
+                  transaction.type === "income"
+                    ? { color: "#33CC95" }
+                    : { color: "red" }
+                }
+              >
+                {transaction.price.toLocaleString("pt-br", {
+                  style: "currency",
+                  currency: "BRL",
+                })}
+              </td>
               <td>{transaction.category}</td>
               <td>{transaction.date}</td>
             </tr>
-          )
+          );
         })}
       </tbody>
     </table>

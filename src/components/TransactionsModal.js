@@ -24,10 +24,7 @@ export function TransactionsModal({ isModalOpen, toggleModal }) {
 
     setNewTransaction({
       name,
-      price: Number(price).toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL",
-      }),
+      price: Number(price),
       category,
       type: selectedButton,
       date: new Date().toLocaleDateString(),
