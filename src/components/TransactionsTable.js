@@ -26,6 +26,7 @@ export function TransactionsTable() {
                     : { color: "red" }
                 }
               >
+                {transaction.type === "outcome" ? "- " : ""}
                 {transaction.price.toLocaleString("pt-br", {
                   style: "currency",
                   currency: "BRL",

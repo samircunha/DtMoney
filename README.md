@@ -18,7 +18,7 @@ Table of Contents
 
 ## About the project <a name="-about-project" style="text-decoration:none"></a>
 
-I'm doing this project to challenge myself to make a project based on a figma layout. It will be a cash inflow and outflow controller. Along with that, it shows you what expenses and what cash inflows there were during the time period.
+This project is about a website that helps you control expenses. With it you launch both the inflow and outflow of money. To make this project I used a layout from figma.
 
 ---
 
@@ -37,7 +37,7 @@ I'm doing this project to challenge myself to make a project based on a figma la
 - [x] Front Page
 - [x] Transaction Modal 
 - [x] Local Server With Miragejs
-- [x] Making Requests With Axios
+- [x] Requests With Axios
 - [x] Saving New Transacions On Server
 
 ---

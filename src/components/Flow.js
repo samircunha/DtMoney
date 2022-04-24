@@ -34,7 +34,7 @@ export function Flow() {
           <span>Saídas</span> <img alt="saidas" src={Saidas}></img>
         </p>
         <div>
-          {outcomes.toLocaleString("pt-br", {
+          - {outcomes.toLocaleString("pt-br", {
             style: "currency",
             currency: "BRL",
           })}
